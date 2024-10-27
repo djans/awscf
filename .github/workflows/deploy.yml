@@ -7,8 +7,9 @@ env:
   applicationfolder: spring-boot-hello-world-example
   AWS_REGION: us-east-1
   S3BUCKET: defaultbuckethello
-
-
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
 jobs:
   build:
     name: Build and Package
@@ -23,7 +24,7 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.IAMROLE_GITHUB }}
-          role-session-name: GitHub-Action-Role
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Set up JDK 1.8
@@ -50,12 +51,17 @@ jobs:
     permissions:
       id-token: write
       contents: read
+
+
+
+
+
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: aws-actions/configure-aws-credentials@v1
       with:
         role-to-assume: ${{ secrets.IAMROLE_GITHUB }}
-        role-session-name: GitHub-Action-Role
+        role-session-name: GitHub_to_AWS_via_FederatedOIDC
         aws-region: ${{ env.AWS_REGION }}
     - run: |
         echo "Deploying branch ${{ env.GITHUB_REF }} to ${{ github.event.inputs.environment }}"
