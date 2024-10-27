@@ -5,8 +5,8 @@ on:
 
 env:
   applicationfolder: spring-boot-hello-world-example
-  AWS_REGION: ##region##
-  S3BUCKET: ##s3-bucket## 
+  AWS_REGION: us-east-1
+  S3BUCKET: defaultbuckethello
 
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       id-token: write
       contents: read
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         name: Checkout Repository
 
       - uses: aws-actions/configure-aws-credentials@v1
