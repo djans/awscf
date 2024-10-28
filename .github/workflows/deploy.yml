@@ -53,8 +53,8 @@ jobs:
 
       - name: Tag and Push Docker image
         run: |
-          docker tag your-image-name:latest <account-id>.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
-          docker push <account-id>.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
+          docker tag your-image-name:latest 227000603860.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
+          docker push 227000603860.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
   deploy:
     needs: build
     runs-on: ubuntu-latest
