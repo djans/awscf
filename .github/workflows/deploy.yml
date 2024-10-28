@@ -45,7 +45,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tags: cogitosum/ecr-01:latest 227000603860.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
+          add-hosts: 227000603860.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
+          tags: cogitosum/ecr-01:latest
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
   deploy:
