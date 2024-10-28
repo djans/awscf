@@ -12,4 +12,4 @@ USER 1001
 # Generate Liberty config based on server.xml
 RUN configure.sh
 
-ADD target/hw-web.war /opt/ibm/wlp/usr/servers/defaultServer/apps
+ADD target/SpringBootHelloWorldExampleApplication.war /opt/ibm/wlp/usr/servers/defaultServer/apps
