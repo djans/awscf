@@ -25,23 +25,29 @@ jobs:
           role-to-assume: ${{ secrets.IAMROLE_GITHUB }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ env.AWS_REGION }}
-
       - name: Set up JDK 1.8
         uses: actions/setup-java@v4
         with:
           java-version: 1.8
-
+          distribution: 'oracle'
       - name: chmod
         run: chmod -R +x ./.github
-
       - name: Build and Package Maven
         id: package
         working-directory: ${{ env.applicationfolder }}
         run: $GITHUB_WORKSPACE/.github/scripts/build.sh
-
       - name: Upload Artifact to s3
         working-directory: ${{ env.applicationfolder }}/target
-        run: aws s3 cp *.war s3://${{ env.S3BUCKET }}/        
+        run: aws s3 cp *.war s3://${{ env.S3BUCKET }}/
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Docker Build and PUSH
+        uses: docker/build-push-action@v6
+        with:
+          push: false
+          tags: cogitosum/ecr-01:latest 227000603860.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
   deploy:
     needs: build
     runs-on: ubuntu-latest
