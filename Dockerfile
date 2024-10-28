@@ -6,7 +6,7 @@ FROM websphere-liberty:21.0.0.12-full-java17-openj9
 COPY wlp/config/server.xml /config/server.xml
 USER root
 RUN chown 1001:0 /config/server.xml
-ARG
+
 USER 1001
 
 # Generate Liberty config based on server.xml
