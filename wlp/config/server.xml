@@ -8,6 +8,6 @@
 <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
 
 
-<webApplication contextRoot="/" location="hw-web.war" />
+<webApplication contextRoot="/" location="application.war" />
 
 </server>
