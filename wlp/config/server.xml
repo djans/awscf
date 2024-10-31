@@ -17,4 +17,8 @@
     <applicationMonitor updateTrigger="polled" pollingRate="500ms" dropins="dropins" dropinsEnabled="true"/>
     <webApplication contextRoot="/" location="application.war" />
     <config updateTrigger="polled" monitorInterval="500ms"/>
+    <logging traceSpecification="*=info">
+        <logFile logFileName="${server.config.dir}/custom-logs/messages.log" />
+        <logFile logFileName="${server.config.dir}/custom-logs/trace.log" />
+    </logging>
 </server>
