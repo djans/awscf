@@ -4,7 +4,14 @@
 <!--These elements have been identified from this application's configuration.-->
     <featureManager>
         <feature>servlet-4.0</feature>
+        <feature>adminCenter-1.0</feature>
     </featureManager>
+    <basicRegistry id="basic">
+        <user name="djans" password="Lib!01Cla992" />
+    </basicRegistry>
+    <administrator-role>
+        <user>djans</user>
+    </administrator-role>
     <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
     <applicationManager autoExpand="true" />
     <applicationMonitor updateTrigger="polled" pollingRate="500ms" dropins="dropins" dropinsEnabled="true"/>
