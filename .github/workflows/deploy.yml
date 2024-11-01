@@ -38,7 +38,7 @@ jobs:
         run: $GITHUB_WORKSPACE/.github/scripts/build.sh
       - name: Upload Artifact to s3
         working-directory: ${{ env.applicationfolder }}/target
-        run: aws s3 cp *.war s3://${{ env.S3BUCKET }}/
+        run: aws s3 cp application.war s3://${{ env.S3BUCKET }}/
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
