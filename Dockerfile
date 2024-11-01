@@ -10,7 +10,7 @@ RUN chown 1001:0 /config/server.xml
 USER 1001
 
 # Generate Liberty config based on server.xml
-#RUN features.sh
+
 RUN configure.sh
 
 ADD spring-boot-hello-world-example/target/application.war /opt/ibm/wlp/usr/servers/defaultServer/apps
