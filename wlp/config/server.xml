@@ -3,7 +3,7 @@
 <server>
 <!--These elements have been identified from this application's configuration.-->
     <featureManager>
-        <feature>jakartaee-9.1</feature>
+        <feature>jakartaee-10.0</feature>
     </featureManager>
     <basicRegistry id="basic">
         <user name="djans" password="Lib!01Cla992" />
