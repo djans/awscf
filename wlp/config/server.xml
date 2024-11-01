@@ -4,7 +4,7 @@
 <!--These elements have been identified from this application's configuration.-->
     <featureManager>
         <feature>adminCenter-1.0</feature>
-        <feature>jakartaee-9.0</feature>
+        <feature>jakartaee-9.1</feature>
     </featureManager>
     <basicRegistry id="basic">
         <user name="djans" password="Lib!01Cla992" />
