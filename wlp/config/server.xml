@@ -3,7 +3,6 @@
 <server>
 <!--These elements have been identified from this application's configuration.-->
     <featureManager>
-        <feature>adminCenter-</feature>
         <feature>jakartaee-9.1</feature>
     </featureManager>
     <basicRegistry id="basic">
