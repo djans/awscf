@@ -1,5 +1,5 @@
 #IMAGE: Get the base image for Liberty
-FROM icr.io/appcafe/open-liberty
+FROM icr.io/appcafe/websphere-liberty:24.0.0.10-full-java21-openj9-ubi-minimal
 
 
 #BINARIES: Add in all necessary application binaries
