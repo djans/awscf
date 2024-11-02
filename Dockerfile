@@ -1,5 +1,5 @@
 #IMAGE: Get the base image for Liberty
-FROM websphere-liberty:22.0.0.12-full-java17-openj9
+FROM websphere-liberty:21.0.0.12-full-java17-openj9
 
 
 #BINARIES: Add in all necessary application binaries
