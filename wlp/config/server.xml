@@ -3,7 +3,6 @@
 <server>
     <!--These elements have been identified from this application's configuration.-->
     <featureManager>
-<!--        <feature>servlet-4.0</feature>-->
         <feature>adminCenter-1.0</feature>
         <feature>springboot-3.0</feature>
         <feature>webProfile-10.0</feature>

@@ -5,17 +5,28 @@
     <title>View Books</title>
 </head>
 <body>
+Managed by AWS<br/>
 <table>
-    <thead>
-    <tr>
-        <th>ISBN</th>
-        <th>Name</th>
-        <th>Author</th>
-    </tr>
-    </thead>
     <tbody>
-        Managed by AWS<br/>
-        EC2/LB/CODEDEPLOY/S3/ROUTE53/SYSTEM MANAGER/ECR/IAM/CLOUDTRAIL/CLOUDWATCH/CLOUFORMATION/GITHUBACTIONS/CERT MGR ...
+        <thead>
+            <tr>
+                <td>EC2</td>
+                <td>LB</td>
+                <td>CODEDEPLOY</td>
+                <td>S3</td>
+                <td>ROUTE53</td>
+                <td>SYSTEM MANAGER</td>
+                <td>ECR</td>
+                <td>IAM</td>
+                <td>CLOUDTRAIL</td>
+    
+                <td>CLOUDWATCH</td>
+                <td>CLOUFORMATION</td>
+                <td>GITHUBACTIONS</td>
+                <td>CERT MGR </td>
+                <td> ..... </td>
+            </tr>
+        </thead>
     </tbody>
 </table>
 </body>
