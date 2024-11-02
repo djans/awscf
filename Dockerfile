@@ -14,4 +14,4 @@ USER 1001
 #RUN features.sh
 RUN configure.sh
 
-ADD spring-boot-hello-world-example/target/application.war /opt/ibm/wlp/usr/servers/defaultServer/apps
+ADD spring-boot-hello-world-example/target/application.war /opt/ol/wlp/usr/servers/defaultServer/apps
