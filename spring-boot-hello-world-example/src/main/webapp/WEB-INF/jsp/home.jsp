@@ -14,7 +14,7 @@
     </tr>
     </thead>
     <tbody>
-        Managed by AWS
+        Managed by AWS<br/>
         EC2/LB/CODEDEPLOY/S3/ROUTE53/SYSTEM MANAGER/ECR/IAM/CLOUDTRAIL/CLOUDWATCH/CLOUFORMATION/GITHUBACTIONS/CERT MGR ...
     </tbody>
 </table>

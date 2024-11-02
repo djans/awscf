@@ -6,12 +6,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.springtest</groupId>
-	<artifactId>SpringBootHelloWorldExampleApplication</artifactId>
+	<groupId>com.cogitosum</groupId>
+	<artifactId>hw</artifactId>
 	<version>1</version>
-	<name>SpringBootHelloWorldExampleApplication</name>
+	<name>hw</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>war</packaging>
 	<properties>
@@ -22,17 +21,16 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>jakarta.platform</groupId>-->
-<!--			<artifactId>jakarta.jakartaee-api</artifactId>-->
-<!--			<version>${jakarta.ee.version}</version>-->
-<!--			<scope>provided</scope>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -40,24 +38,18 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<finalName>application</finalName>
+				</configuration>
 			</plugin>
 			<plugin>
-            	<groupId>org.apache.maven.plugins</groupId>
-            	<artifactId>maven-war-plugin</artifactId>
-            	<version>3.3.1</version>
-        	<configuration>
-         		 <warName>application</warName>
-       		 </configuration>
-            <executions>
-                <execution>
-                    <id>default-war</id>
-                    <phase>prepare-package</phase>
-                    <configuration>
-                        <failOnMissingWebXml>false</failOnMissingWebXml>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version> <!-- Use the latest version -->
+				<configuration>
+					<warSourceDirectory>src/main/webapp</warSourceDirectory>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<repositories>
