@@ -19,52 +19,52 @@
                 <td><a href="https://github.com/djans/awscf/actions">GITHUBACTIONS (CI-CD)</a></td>
             </tr>
             <tr>
-                <td><a href="https://github.com/djans/awscf/blob/main/wlp/config/server.xml" OPENLIBERTY</td>
+                <td><a href="https://github.com/djans/awscf/blob/main/wlp/config/server.xml">OPENLIBERTY</a></td>
             </tr>
             <tr>
-                <td><a href="${pageContext.request.contextPath}/pic/ami.jpg"></a>AMI</td>
+                <td><a href="${pageContext.request.contextPath}/pic/ami.jpg">AMI</a></td>
             </tr>
             <tr>
-                <td><a href="${pageContext.request.contextPath}/pic/ec2.jpg"></a>EC2</td>
+                <td><a href="${pageContext.request.contextPath}/pic/ec2.jpg">EC2</a></td>
             </tr>
             <tr>
-                <td><a href="${pageContext.request.contextPath}/pic/LB.jpg"></a>LB & <a href="${pageContext.request.contextPath}/pic/LB.jpg">TARGET GROUPS</a></td>
+                <td><a href="${pageContext.request.contextPath}/pic/LB.jpg">LB</a> & <a href="${pageContext.request.contextPath}/pic/LB.jpg">TARGET GROUPS</a></td>
             </tr>
             <tr>
-                <td><a href="${pageContext.request.contextPath}/pic/ASG.jpg"></a>ASG-Auto Scaling Group</td>
+                <td><a href="${pageContext.request.contextPath}/pic/ASG.jpg">ASG-Auto Scaling Group</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>CODEDEPLOY</td>
+                <td><a href="">CODEDEPLOY</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>S3</td>
+                <td><a href="">S3</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>ROUTE53</td>
+                <td><a href="">ROUTE53</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>SYSTEM MANAGER</td>
+                <td><a href="">SYSTEM MANAGER</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>ECR</td>
+                <td><a href="">ECR</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>IAM</td>
+                <td><a href="">IAM</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>CLOUDTRAIL</td>
+                <td><a href="">CLOUDTRAIL</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>CLOUDWATCH</td>
+                <td><a href="">CLOUDWATCH</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>CLOUFORMATION</td>
+                <td><a href="">CLOUFORMATION</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>BILLING ( T2.MICRO - SPOT )</td>
+                <td><a href="">BILLING ( T2.MICRO - SPOT )</a></td>
             </tr>
             <tr>
-                <td><a href=""></a>CERT MGR </td>
+                <td><a href="">CERT MGR</a> </td>
             </tr>
             <tr>
                 <td> ..... </td>
