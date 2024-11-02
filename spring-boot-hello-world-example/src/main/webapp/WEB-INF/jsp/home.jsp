@@ -16,20 +16,21 @@
         Managed by AWS. Using<br/><br/>
         <table>
             <tr>
-                <td><a href="${pageContext.request.contextPath}/pic/githubaction.jpg">GITHUBACTIONS</a></td>
-                <td>OPENLIBERTY</td>
-                <td>EC2</td>
-                <td>LB</td>
-                <td>CODEDEPLOY</td>
-                <td>S3</td>
-                <td>ROUTE53</td>
-                <td>SYSTEM MANAGER</td>
-                <td>ECR</td>
-                <td>IAM</td>
-                <td>CLOUDTRAIL</td>
-                <td>CLOUDWATCH</td>
-                <td>CLOUFORMATION</td>
-                <td>CERT MGR </td>
+                <td><a href="https://github.com/djans/awscf/actions">GITHUBACTIONS</a></td>
+                <td><a href="https://github.com/djans/awscf/blob/main/wlp/config/server.xml" OPENLIBERTY</td>
+                <td><a href="${pageContext.request.contextPath}/pic/ami.jpg"></a>AMI</td>
+                <td><a href="${pageContext.request.contextPath}/pic/ec2.jpg"></a>EC2</td>
+                <td><a href=""></a>LB</td>
+                <td><a href=""></a>CODEDEPLOY</td>
+                <td><a href=""></a>S3</td>
+                <td><a href=""></a>ROUTE53</td>
+                <td><a href=""></a>SYSTEM MANAGER</td>
+                <td><a href=""></a>ECR</td>
+                <td><a href=""></a>IAM</td>
+                <td><a href=""></a>CLOUDTRAIL</td>
+                <td><a href=""></a>CLOUDWATCH</td>
+                <td><a href=""></a>CLOUFORMATION</td>
+                <td><a href=""></a>CERT MGR </td>
                 <td> ..... </td>
             </tr>
         </table>
