@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "1"
 set -xe
 
 # Log in to ECR
