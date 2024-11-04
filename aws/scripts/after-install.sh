@@ -3,7 +3,7 @@ echo "11111111111111111111111"
 set -xe
 
 # Log in to ECR
-echo "222222222222222222222222"
+echo "2222222222222222222222222"
 aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 227000603860.dkr.ecr.us-east-1.amazonaws.com
 
 # Pull the Docker image from ECR
