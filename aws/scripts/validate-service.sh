@@ -4,7 +4,7 @@ set -x
 NUMBER_OF_ATTEMPTS=10
 SLEEP_TIME=3
 
-# Ensure Tomcat is running by making an HTTPS GET request to the default page.
+# Ensure OpenLiberty is running by making an HTTPS GET request to the default page.
 # Don't try and verify the certificate; use the --insecure flag.
 for i in `seq 1 $NUMBER_OF_ATTEMPTS`;
 do
