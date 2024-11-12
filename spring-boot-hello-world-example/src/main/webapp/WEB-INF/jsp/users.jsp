@@ -32,12 +32,12 @@
   </thead>
   <tbody>
   <!-- Iterate through the list of employees passed from the controller -->
-  <c:forEach var="employee" items="${employees}">
+  <c:forEach var="user" items="${users}">
     <tr>
-      <td>${employee.id}</td>
-      <td>${employee.name}</td>
-      <td>${employee.position}</td>
-      <td>${employee.salary}</td>
+      <td>${user.id}</td>
+      <td>${user.name}</td>
+      <td>${user.position}</td>
+      <td>${user.salary}</td>
     </tr>
   </c:forEach>
   </tbody>
