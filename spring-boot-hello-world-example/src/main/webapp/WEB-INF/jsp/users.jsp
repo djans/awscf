@@ -25,19 +25,21 @@
   <thead>
   <tr>
     <th>ID</th>
-    <th>Name</th>
-    <th>Position</th>
-    <th>Salary</th>
+    <th>FName</th>
+    <th>LName</th>
+    <th>Email</th>
+    <th>CreatedAt</th>
   </tr>
   </thead>
   <tbody>
   <!-- Iterate through the list of employees passed from the controller -->
   <c:forEach var="user" items="${users}">
     <tr>
-      <td>${user.id}</td>
-      <td>${user.name}</td>
-      <td>${user.position}</td>
-      <td>${user.salary}</td>
+      <td>${user.user_id}</td>
+      <td>${user.first_name}</td>
+      <td>${user.last_name}</td>
+      <td>${user.email}</td>
+      <td>${user.created_at}</td>
     </tr>
   </c:forEach>
   </tbody>

@@ -12,36 +12,35 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment for user_id
-    private Long userId;
-
-    private String firstName;
-    private String lastName;
+    private Long user_id;
+    private String first_name;
+    private String last_name;
     private String email;
-    private String createdAt;
+    private String created_at;
 
     // Getters and Setters
-    public Long getUserId() {
-        return userId;
+    public String getFirst_name() {
+        return first_name;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public Long getUser_id() {
+        return user_id;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public String getEmail() {
@@ -52,12 +51,12 @@ public class User {
         this.email = email;
     }
 
-    public String getCreatedAt() {
-        return createdAt;
+    public String getCreated_at() {
+        return created_at;
     }
 
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setCreated_at(String created_at) {
+        this.created_at = created_at;
     }
 }
 
