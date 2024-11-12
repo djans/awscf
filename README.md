@@ -4,4 +4,4 @@ Plus à venir au fur et à mesure de mon avancement.
 
 Le résultat se trouve sur ce site https://www.cogitosum.net
 
-Mieux que de passer un examen .......
+Mieux que de passer un examen ....... Bien que je viens de passer la certification AWS Cloud Practitioner.
