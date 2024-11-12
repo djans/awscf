@@ -13,6 +13,7 @@ else
     sudo docker pull 227000603860.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
     # Run the Docker container
     sudo docker run -d -p 80:9080 -p 443:9443 227000603860.dkr.ecr.us-east-1.amazonaws.com/cogitosum/ecr-01:latest
+    # Remove the credentials file
+    rm /root/.aws/credentials
 fi
 
-rm /root/.aws/credentials
