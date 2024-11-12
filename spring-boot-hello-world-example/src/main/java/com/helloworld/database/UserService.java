@@ -14,7 +14,7 @@ public class UserService {
         List<User> users = userRepository.findAll();
         System.out.println("Users: " + users.size());
         for (User user : users) {
-            System.out.println(user.getFirstName());
+            System.out.println(user.getFirst_name());
         }
         return userRepository.findAll(); // Fetch all users from the database
     }
