@@ -7,7 +7,6 @@ COPY wlp/config/server.xml /config/server.xml
 USER root
 RUN chown 1001:0 /config/server.xml
 
-USER 1001
 
 RUN token=$(curl -s --request PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
 RUN instance_id=$(curl -s -H "X-aws-ec2-metadata-token: $token" http://169.254.169.254/latest/meta-data/instance-id)
@@ -23,8 +22,9 @@ RUN export instance_id instance_type region availability_zone instance_life_cycl
     && echo "Availability Zone: $availability_zone"
 
 # Generate Liberty config based on server.xml
-
+USER 1001
 #RUN features.sh
 RUN configure.sh
 
 ADD spring-boot-hello-world-example/target/application.war /opt/ol/wlp/usr/servers/defaultServer/apps
+
