@@ -45,19 +45,30 @@
   </tbody>
 </table>
 
-<%
-  String instanceid = System.getenv("instance_id");
-  String instancetype = System.getenv("instance_type");
-  String instancelifecycle = System.getenv("instance_life_cycle");
-  String region = System.getenv("region");
-  String availabilityzone = System.getenv("availability_zone");
 
-  out.println("Instance ID: " + instanceid + "<br>");
-  out.println("Instance Type: " + instancetype + "<br>");
-  out.println("Instance Life Cycle: " + instancelifecycle + "<br>");
-  out.println("Region: " + region + "<br>");
-  out.println("Availability Zone: " + availabilityzone + "<br>");
-%>
+<table>
+  <tr>
+    <td>Instance ID:</td>
+    <td>${instance-id}</td>
+  </tr>
+  <tr>
+    <td>Instance Type:</td>
+    <td>${instance-type}</td>
+  </tr>
+  <tr>
+    <td>Instance Life Cycle:</td>
+    <td>${instance-life-cycle}</td>
+  </tr>
+  <tr>
+    <td>Region:</td>
+    <td>${region}</td>
+  </tr>
+  <tr>
+    <td>Availability Zone:</td>
+    <td>${availability-zone}</td>
+  </tr>
+</table>
+
 
 </body>
 </html>
