@@ -19,30 +19,28 @@
   </style>
 </head>
 <body>
-<h1>Employee List</h1>
-
+<h1>Metadata</h1>
 <table>
-  <thead>
   <tr>
-    <th>ID</th>
-    <th>FName</th>
-    <th>LName</th>
-    <th>Email</th>
-    <th>CreatedAt</th>
+    <td>Instance ID:</td>
+    <td>${instance-id}</td>
   </tr>
-  </thead>
-  <tbody>
-  <!-- Iterate through the list of employees passed from the controller -->
-  <c:forEach var="user" items="${users}">
-    <tr>
-      <td>${user.user_id}</td>
-      <td>${user.first_name}</td>
-      <td>${user.last_name}</td>
-      <td>${user.email}</td>
-      <td>${user.created_at}</td>
-    </tr>
-  </c:forEach>
-  </tbody>
+  <tr>
+    <td>Instance Type:</td>
+    <td>${instance-type}</td>
+  </tr>
+  <tr>
+    <td>Instance Life Cycle:</td>
+    <td>${instance-life-cycle}</td>
+  </tr>
+  <tr>
+    <td>Region:</td>
+    <td>${region}</td>
+  </tr>
+  <tr>
+    <td>Availability Zone:</td>
+    <td>${availability-zone}</td>
+  </tr>
 </table>
 </body>
 </html>
